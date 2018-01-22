@@ -293,7 +293,30 @@ table.rg-table th.number, td.number {
     text-align: right
 }
 
-@media screen and (max-width: 600px) {
+table.rg-table.zebra tr:nth-child(even) {
+    background-color: #99bf2a;
+    background-color: #99bf2a73;
+}
+
+table.rg-table td {
+    padding: .5em 1em .25em 1em;
+    border-bottom: 1px solid #3d5619;
+    border-bottom: 1px solid #99bf2794;
+    text-align: right;
+}
+
+table.rg-table td:last-child {
+    border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    table.rg-table td {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .rg-container {
         max-width: 600px;
         margin: 0 auto
@@ -321,7 +344,6 @@ table.rg-table th.number, td.number {
 
     table.rg-table tr, table.rg-table th, table.rg-table td {
         display: block;
-        padding: 0
     }
 
     table.rg-table tr {
@@ -334,24 +356,6 @@ table.rg-table th.number, td.number {
         background-color: inherit !important
     }
 
-    table.rg-table.zebra tr:nth-child(even) {
-        background-color: none
-    }
-
-    table.rg-table.zebra td:nth-child(even) {
-        background-color: #99bf2a
-    }
-
-    table.rg-table tr:nth-child(even) {
-        background-color: none
-    }
-
-    table.rg-table td {
-        padding: .5em 0 .25em 0;
-        border-bottom: 1px dotted #ccc;
-        text-align: right
-    }
-
     table.rg-table td[data-title]:before {
         content: attr(data-title);
         font-weight: bold;
@@ -360,11 +364,6 @@ table.rg-table th.number, td.number {
         float: left;
         margin-right: .5em;
         font-size: .95em
-    }
-
-    table.rg-table td:last-child {
-        padding-right: 0;
-        border-bottom: 2px solid #ccc
     }
 
     table.rg-table td:empty {
@@ -542,6 +541,20 @@ table.rg-table th.number, td.number {
 
 .page-template-cseSearchTemplate .form-style-5 .form-style-5_input-wraper:nth-child(odd) {
     padding-right: 10px;
+}
+
+#cse_results .rg-container {
+    padding: 1em 1.5em;
+}
+
+#cse_results th:first-child,
+#cse_results td:first-child {
+    padding-left: 1em;
+}
+
+#cse_results th:last-child,
+#cse_results td:last-child {
+    padding-right: 1em;
 }
 
 @media only screen and (min-width: 768px ){
