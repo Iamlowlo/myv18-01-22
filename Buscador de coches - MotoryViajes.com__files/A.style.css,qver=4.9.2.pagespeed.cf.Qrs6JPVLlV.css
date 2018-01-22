@@ -809,15 +809,23 @@ body.home #top-navigation {
 }
 
 #breadcrumbs .raquo {
-    display: block;
-    float: left;
+    display: inline-block;
     position: relative;
-    width: 44px
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .et_breadcrumbs_title, .et_breadcrumbs_content {
-    display: block;
-    float: left
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.et_breadcrumbs_title {
+    margin: 10px;
+}
+
+.et_breadcrumbs_content {
+    padding-left: 14px;
 }
 
 h1.module-title, h4.widgettitle, #breadcrumbs {
@@ -1315,12 +1323,11 @@ h1.module-title span {
 }
 
 #breadcrumbs a {
-    float: left;
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #333;
     font-weight: 900;
-    padding: 10px 24px 0 0
+    padding: 10px
 }
 
 #breadcrumbs.bcn_breadcrumbs a {
@@ -1330,7 +1337,6 @@ h1.module-title span {
 }
 
 #breadcrumbs a:first-child {
-    padding-left: 24px
 }
 
 #left-area {
