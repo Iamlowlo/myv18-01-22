@@ -524,6 +524,7 @@ table.rg-table td:last-child {
     width: 100%;
     background-image: url("../assets/banner_sm.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     height: 260px;
 }
 
