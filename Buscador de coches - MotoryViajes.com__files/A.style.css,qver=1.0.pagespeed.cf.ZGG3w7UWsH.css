@@ -515,14 +515,16 @@ table.rg-table td:last-child {
     border-radius: 0;
     box-sizing: border-box;
     display: inline-block;
+    vertical-align: top;
     width: 100%;
 }
 
 .page-template-cseSearchTemplate .aside_banner {
     display: inline-block;
     width: 100%;
-    background-color: #00ccff;
-    height: 10em;
+    background-image: url("../assets/banner_sm.jpg");
+    background-size: contain;
+    height: 260px;
 }
 
 .page-template-cseSearchTemplate .form-style-5 .form-style-5_input-wraper {
@@ -557,11 +559,18 @@ table.rg-table td:last-child {
     padding-right: 1em;
 }
 
+.banner_text {
+    color: red;
+}
+
 @media only screen and (min-width: 768px ){
     .page-template-cseSearchTemplate .form-style-5 .form-style-5_input-wraper {
         box-sizing: border-box;
         display: inline-block;
         width: 50%;
+    }
+    .page-template-cseSearchTemplate .aside_banner {
+        background-image: url("../assets/banner_md.jpg");
     }
 }
 
@@ -570,6 +579,16 @@ table.rg-table td:last-child {
         width: 75%;
     }
     .page-template-cseSearchTemplate .aside_banner {
+        background-image: url("../assets/banner_lg.jpg");
+        height: 419px;
+    }
+    .page-template-cseSearchTemplate .aside_banner {
         width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1300px ){
+    .page-template-cseSearchTemplate .aside_banner {
+        background-image: url("../assets/banner_xlg.jpg");
     }
 }
